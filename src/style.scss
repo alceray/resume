@@ -2,11 +2,10 @@ $page-width: 8.5in;
 $page-height: 11in;
 
 // Bulma overrides
-$family-sans-serif: 'IBM Plex Sans';
-$family-monospace: 'Cascadia Mono';
+$family-sans-serif: Arial, 'Helvetica Now Display', 'IBM Plex Sans';
+$family-monospace: 'Cascadia Code';
 
 @import './node_modules/bulma/bulma.sass';
-
 
 .columns, .tile.is-ancestor {
     margin-right: 0;
@@ -30,6 +29,10 @@ body {
 
 section#title, section#contact {
     background: #f8f8f8;
+
+    h1.title {
+        transform: scaleX(0.9);
+    }
 }
 
 a {
@@ -160,7 +163,7 @@ section#details {
                     font-size: 10px;
                     font-weight: bolder;
                     margin-left: -13px;
-                    margin-right: 5px;
+                    margin-right: 3px;
                 }
 
                 // &::after {
