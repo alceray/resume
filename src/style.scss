@@ -9,7 +9,7 @@ $family-monospace: 'Cascadia Code';
 
 .columns, .tile.is-ancestor {
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 5;
 }
 
 @page {
@@ -58,14 +58,14 @@ section#details {
     height: calc(#{$page-height} - 147.2px);
 
     h1 {
-        font-size: 24px;
+        font-size: 26px;
         margin: 2px 0;
     }
 
     h2 {
-        font-size: 15px;
+        font-size: 16px;
         font-weight: bold;
-        line-height: 18px;
+        line-height: 20px;
         color: black;
     }
 

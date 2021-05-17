@@ -9,88 +9,134 @@ link(rel='stylesheet' href='style.scss')
 //- BEGIN Resume Content
 section.columns.pt-3.mb-0#title
     div.column.has-text-centered
-        h1.title.is-size-1 ROY LI
+        h1.title.is-size-1 Ray Lin
 
 section.columns.is-centered.has-text-centered.is-family-monospace.pb-1#contact
     div.column
-        a(target='_blank' href='https://github.com/RuyiLi') 
-            i.fa.fa-github
-            p github.com/RuyiLi
+        //- a(target='_blank' href='https://github.com/alceray') 
+        i.fa.fa-github
+        p github.com/alceray
     div.column
-        a(target='_blank' href='https://linkedin.com/in/ruyi-li')
-            i.fa.fa-linkedin
-            p linkedin.com/in/ruyi-li
+        //- a(target='_blank' href='https://linkedin.com/in/raylin02')
+        i.fa.fa-linkedin
+        p linkedin.com/in/raylin02
     div.column
-        a(target='_blank' href='https://ruyili.ca')
-            i.fa.fa-globe
-            p ruyili.ca
-    div.column
-        a(target='_blank' href='mailto:ruyi.li@uwaterloo.ca')
-            i.fa.fa-envelope
-            p ruyi.li@uwaterloo.ca
-    //- div.column.is-narrow
-    //-     i.fa.fa-phone
-    //-     p 647.804.0140
+        //- a(target='_blank' href='mailto:ray02lin@gmail.com')
+        i.fa.fa-envelope
+        p ray02lin@gmail.com
+    div.column.is-narrow
+        i.fa.fa-phone
+        p 647-974-8613
 
 section.columns#details
     div.column#long-description
-        div#experience
-            h1 Work Experience
-
-            div.job
-                h2 Software Engineering Intern
-                h2.company Tribe Community Platform
-                em.location #[a(target='_blank' href='https://tribe.so/') www.tribe.so]
-                p.timeline 2021 &mdash; Present
-                ul.details
-                    li.
-                        Operated on backend in an Agile environment for the launch of Version 2 of Tribe
-                    li.
-                        Worked with #[strong ElasticSearch] to improve the accuracy of search results and fixed issues
-                        such as duplicate search results and certain media types not showing
-
-            div.job
-                h2 Chief Technology Officer
-                h2.company AlumNav Inc.
-                em.location #[a(target='_blank' href='https://alumnav.com/') www.alumnav.com]
+        div#education
+                h1 Education
+                
+                h2 Computer Science, Honours Co-op
                 p.timeline 2020 &mdash; Present
+                p.details University of Waterloo
+
+                h2 International Baccalaureate Diploma Program 
+                p.timeline 2016 &mdash; 2020
+                p.details Erindale Secondary School
+
+                h2 AP Computer Science A
+                p.timeline 2018
+                p.details LinkedKey
+            
+        div#projects
+            h1 Projects
+            div.project
+                h2 Tetris Game
+                p.timeline 2021 &mdash; Present
+                em.stack Python, Pygame
+                ul.details 
+                    li.
+                        Used Python and Pygame to build a Tetris game that incorporates original features with creative modifications
+            
+            div.project
+                h2 URL Shortener/Customizer
+                p.timeline 2021
+                em.stack Python, Flask, HTML, SQLite
                 ul.details
                     li.
-                        Co-founded platform offering mentorship for over 5,000 high school students
+                        Web application allows users to enter a URL and customize the URL key to their preference, or the program can generate a random shortened URL
                     li.
-                        Developed website using #[strong Pug/JS/SCSS], set up CI/CD with GitHub Actions and Netlify
+                        Used Python and Flask to store URL data in a SQLite database
+            div.project 
+                h2 Hamiltonian Cycle
+                p.timeline 2020
+                em.stack C++
+                ul.details 
+                    li.
+                        Employed a backtracking algorithm to solve the Hamilton cycle problem 
+            div.project
+                h2 Huffman Tree
+                p.timeline 2018
+                em.stack Java
+                ul.details 
+                    li.
+                        Implemented a Huffman coding algorithm, inherited from a Binary Search Tree algorithm, to encode strings into their binary code and decode binary codes
+
+        div#experience
+            h1 Experiences
 
             div.job
-                h2 Software Engineer
-                h2.company WZMH Architects
-                em.location Toronto, ON
-                p.timeline 2020 &mdash; 2020
+                h2 Computer Science Club Founding Member
+                br
+                em.location Erindale Secondary School 
+                p.timeline 2017 &mdash; 2020
                 ul.details
                     li.
-                        Created software for the BlackBox5 IoT project
+                       Learned computer science concepts and explained material to struggling clubmates
                     li.
-                        Implemented backend in #[strong Node.js] to allow a #[strong React Native] 
-                        app to interface with devices connected to an Arduino microcontroller
-                        through a REST API and Websockets
-                    li.
-                        Stored data in a #[strong PostgreSQL] database and deployed project using #[strong Docker]
+                        Consistently attended the weekly meets and actively asked questions about unfamiliar concepts
+                    //- li.
+                    //-     Promoted the club to my friends and classmates 
 
             div.job
-                h2 Web Developer
-                h2.company VolunteeringPeel
-                em.location Mississauga, ON
-                p.timeline 2019 &mdash; 2020
+                h2 Piano Tutor
+                br
+                em.location Mississauga
+                p.timeline 2018 &mdash; 2019
                 ul.details
-                    li Maintained website to help students find/apply for volunteer positions
-                    li Created tools to improve efficiency of management processes and handled technological support
+                    li.
+                        Planned piano lessons for several children in the neighbourhood to practice and hone their playing skills
+                    li.
+                        Provided emotional support to children who doubted their ability to play piano or recognize notes
 
-            div.job
-                h2 JavaScript and Python Teacher
-                h2.company Triway Education
-                em.location Richmond Hill, ON
-                p.timeline 2019 &mdash; 2020
-                ul.details
-                    li Prepared lesson plans and assignments for students to practice and hone their skills
+            //- div.job
+            //-     h2 Software Engineer
+            //-     h2.company WZMH Architects
+            //-     em.location Toronto, ON
+            //-     p.timeline 2020 &mdash; 2020
+            //-     ul.details
+            //-         li.
+            //-             Created software for the BlackBox5 IoT project
+            //-         li.
+            //-             Implemented backend in #[strong Node.js] to allow a #[strong React Native] 
+            //-             app to interface with devices connected to an Arduino microcontroller
+            //-             through a REST API and Websockets
+            //-         li.
+            //-             Stored data in a #[strong PostgreSQL] database and deployed project using #[strong Docker]
+
+            //- div.job
+            //-     h2 Web Developer
+            //-     h2.company VolunteeringPeel
+            //-     em.location Mississauga, ON
+            //-     p.timeline 2019 &mdash; 2020
+            //-     ul.details
+            //-         li Maintained website to help students find/apply for volunteer positions
+            //-         li Created tools to improve efficiency of management processes and handled technological support
+
+            //- div.job
+            //-     h2 JavaScript and Python Teacher
+            //-     h2.company Triway Education
+            //-     em.location Richmond Hill, ON
+            //-     p.timeline 2019 &mdash; 2020
+            //-     ul.details
+            //-         li Prepared lesson plans and assignments for students to practice and hone their skills
 
             //- div.job
             //-     h2 Teaching Assistant
@@ -100,39 +146,8 @@ section.columns#details
             //-     ul.details
             //-         li Collaborated with classroom teacher to administer tests and curriculum materials
 
-        div#projects
-            h1 Projects
-
-            div.project
-                h2 #[a(target='_blank' href='https://github.com/RuyiLi/BlockOJ') BlockOJ]
-                p.timeline 2020
-                em.stack Node.js (Express), Pug, SASS, JavaScript (Google Blockly), PostgreSQL, C, AWS EC2
-                ul.details
-                    li Winning project created for the Hack the 6ix hackathon
-                    li.
-                        Introduces youth to coding and problem-solving on an online judge platform through a 
-                        friendly and intuitive block-based drag-and-drop coding system
-
-            div.project
-                h2 TriviaMaster
-                p.timeline 2017 &mdash; Present
-                em.stack Node.js (discord.js), Python (FastAPI, PonyORM, Celery), RabbitMQ, PostgreSQL, Vue
-                ul.details 
-                    li.
-                        Application allowing users to add questions and play trivia games with other users
-                        through a Discord bot, website, or mobile app frontend
-                    li.
-                        REST API built in Python, using PonyORM to interact with a PostgreSQL database storing
-                        trivia questions and user profiles
-                    li Discord bot active in over 3 300 servers with over 300 000 users
-
-            div.project
-                h2 #[a(target='_blank' href='https://play.google.com/store/apps/details?id=com.lusiddev.craftmything') Craftrivia]
-                p.timeline 2017
-                em.stack C#, Unity
-                ul.details
-                    li Mobile game developed in C# with the Unity game engine
-                    li Over 130 000 installs on the Android Play Store
+        
+            
 
     div.column#short-description
         div#skills
@@ -140,79 +155,65 @@ section.columns#details
 
             h2 Programming
             div.details
-                p JavaScript/TypeScript
-                p Java
                 p Python
+                p C
+                p C++
+                p Java 
+                p Racket
+                p R 
 
             h2 Server/Web
             div.details
-                p Node.js
-                p Spring
-                p Django/Flask/FastAPI
-                p Vue/React
-                p REST
-                p GraphQL
+                p HTML
+                p Flask
 
             h2 Database
             div.details
-                p PostgreSQL
-                p MongoDB
-                p Redis
-                p SQLAlchemy
-                p TypeORM
+                p SQLite
 
             h2 Tools
             div.details
-                p Docker
                 p Git
-                p TDD
-                p Office
+                p MS Office
 
             h2 Operating Systems
             div.details
                 p Windows
-                p Ubuntu
-                p Raspbian
             
-            h2 Hardware
+            h2 Languages
             div.details
-                p Arduino
-                p Raspberry Pi
-            
-        div#education
-            h1 Education
-            
-            h2 Bachelor of Computer Science and Business Administration Double Degree
-            p.timeline 2020 &mdash; Present
-            p.details University of Waterloo &amp; Wilfrid Laurier University (4.0/4.0 GPA)
-
-            h2 Machine Learning and AI Foundations: Recommendations
-            p.timeline 2019
-            p.details LinkedIn Learning
-
-            h2 SHAD Valley
-            p.timeline 2018
-            p.details Lakehead University
+                p English
+                p French 
+                p Mandarin 
+                p Cantonese
         
         div#awards
             h1 Awards
             
-            h2 Mentor's Choice
+            h2 Level 10 History and Theory - First Class Honours
             p.timeline 2020
-            p.details Hack the 6ix
+            p.details Royal Conservatory Music
 
-            h2 Judge's Choice
-            p.timeline 2020
-            p.details MasseyHacks VI
-
-            h2 Group 3 (Top 65 in Canada)
-            p.timeline 2020
-            p.details Canadian Computing Competition Senior Division
-
-            h2 Most Creative Hack
-            p.timeline 2018
-            p.details HackIR
-
-            h2 SHAD Ambassador
+            h2 Fermat School Champion 
+            p.timeline 2019
+            p.details Erindale Secondary School
+            
+            h2 Galois School Champion
             p.timeline 2018
             p.details Erindale Secondary School
+
+            h2 Fryer School Champion
+            p.timeline 2017
+            p.details Erindale Secondary School
+
+            h2 Canadian Team Math Contest - First Place in Peel Region
+            p.timeline 2019
+            p.details Erindale Secondary School
+
+        div#interests
+            h1 Interests 
+            p Machine learning 
+            p Web development 
+            p Game development 
+            p Mobile app development 
+            p Data mining 
