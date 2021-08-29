@@ -8,8 +8,9 @@ $family-monospace: 'Cascadia Code';
 @import './node_modules/bulma/bulma.sass';
 
 .columns, .tile.is-ancestor {
-    margin-right: 0;
-    margin-left: 5;
+    margin-right: 20;
+    margin-left: 20;
+    // margin-top: 5;
 }
 
 @page {
@@ -24,7 +25,7 @@ $family-monospace: 'Cascadia Code';
 body {
     width: $page-width;
     height: $page-height;
-    padding: 0;
+    padding: 5px;
 }
 
 section#title, section#contact {
@@ -41,16 +42,15 @@ a {
 }
 
 section#contact {
-    padding-right: 20px;
+    padding-right: 0px;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
-
     i {
         font-size: 20px;
     }
 
     a {
         display: block;
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
@@ -63,7 +63,7 @@ section#details {
     }
 
     h2 {
-        font-size: 16px;
+        font-size: 13px;
         font-weight: bold;
         line-height: 20px;
         color: black;
@@ -71,11 +71,12 @@ section#details {
 
     p {
         font-size: 13px;
-        line-height: 16px;
+        line-height: 15px;
     }
     
     .details {
-        margin-bottom: 10px;
+        margin-bottom: 2px;
+        margin-top: 0px;
         margin-left: 4px;
     }
 
@@ -97,7 +98,7 @@ section#details {
 
         h2 {
             display: inline;
-
+            // margin-top: 10px;
             &.company {
                 @extend .has-text-grey-dark;
                 font-weight: bolder;
@@ -142,10 +143,12 @@ section#details {
             // }
         // }
 
-        div.job {
-            // padding-right: 5px;
+        div#experience {
+            margin-top: 8px;
         }
-
+        div#projects {
+            margin-top: 8px;
+        }
         ul {
             margin-left: 0;
             border-left: 1px solid black;
@@ -178,17 +181,47 @@ section#details {
 
     div#short-description {
         border-left: 1px dashed rgba(0, 0, 0, 0.5);
-
         div#skills {
             div.details {
                 p {
                     display: inline-block;
                     margin-right: 5px;
+                    margin-top: 2px;
                 }
     
                 p + p::before {
                     content: '•';
                     margin-right: 5px;
+                }
+            }
+        }
+        div#awards {
+            margin-top: 7px;
+        }
+        div#education {
+            margin-top: 7px;
+        }
+        div#interests {
+            margin-top: 7px;
+        }
+        ul {
+            margin-left: 0;
+            border-left: 1px solid black;
+            border-bottom-left-radius: 0px;
+
+            li {
+                list-style: none;
+                font-size: 13px;
+                margin-left: 12px;
+                margin-bottom: 2px;
+                // display: inline;
+
+                &::before {
+                    content: '—';
+                    font-size: 10px;
+                    font-weight: bolder;
+                    margin-left: -13px;
+                    margin-right: 3px;
                 }
             }
         }

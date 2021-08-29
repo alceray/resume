@@ -13,57 +13,81 @@ section.columns.pt-3.mb-0#title
 
 section.columns.is-centered.has-text-centered.is-family-monospace.pb-1#contact
     div.column
-        //- a(target='_blank' href='https://github.com/alceray') 
-        i.fa.fa-github
-        p github.com/alceray
+        a(target='_blank'  style="text-decoration:none" href='https://github.com/alceray') 
+            i.fa.fa-github
+            p github.com/alceray
     div.column
-        //- a(target='_blank' href='https://linkedin.com/in/raylin02')
-        i.fa.fa-linkedin
-        p linkedin.com/in/raylin02
+        a(target='_blank'  style="text-decoration:none" href='https://linkedin.com/in/raylin02')
+            i.fa.fa-linkedin
+            p linkedin.com/in/raylin02
     div.column
-        //- a(target='_blank' href='mailto:ray02lin@gmail.com')
-        i.fa.fa-envelope
-        p ray02lin@gmail.com
-    div.column.is-narrow
+        a(target='_blank'  style="text-decoration:none" href='mailto:q54lin@uwaterloo.ca')
+            i.fa.fa-envelope
+            p q54lin@uwaterloo.ca
+    //- div.column
+    //-     i.fa.fa-map-marker
+    //-     p Mississauga, ON
+    div.column
         i.fa.fa-phone
         p 647-974-8613
 
 section.columns#details
     div.column#long-description
-        div#education
-                h1 Education
+        div#profile
+            h1 Profile 
+            ul.details 
+                li.
+                    Creative problem solving and communication skills developed from piano tutoring at students' homes
+                li.
+                    Willingness to learn new programming languages and computer concepts demonstrated in my projects and as a Computer Science Club member
+                li.
+                    Teamwork skills shown in participation of math and CS team competitions 
+                li.
+                    5 years of experience using Microsoft Office, including Word, Excel, and PowerPoint
+                //- li.
+                //-     Conversational fluency in English and Cantonese 
+        //- div#education
+        //-         h1 Education
                 
-                h2 Computer Science, Honours Co-op
-                p.timeline 2020 &mdash; Present
-                p.details University of Waterloo
+        //-         h2 Candidate for Bachelor of Computer Science, Honours Co-op
+        //-         p.timeline 2020 &mdash; present
+        //-         p.details University of Waterloo
 
-                h2 International Baccalaureate Diploma Program 
-                p.timeline 2016 &mdash; 2020
-                p.details Erindale Secondary School
+        //-         h2 International Baccalaureate Diploma Program 
+        //-         p.timeline 2016 &mdash; 2020
+        //-         p.details Erindale Secondary School
 
-                h2 AP Computer Science A
-                p.timeline 2018
-                p.details LinkedKey
-            
+        //-         h2 AP Computer Science A
+        //-         p.timeline 2018
+        //-         p.details LinkedKey
+
         div#projects
             h1 Projects
             div.project
-                h2 Tetris Game
-                p.timeline 2021 &mdash; Present
+                h2 #[a(target='_blank' style="text-decoration:none" href='https://github.com/alceray/Tetris-game') Tetris Game]
+                p.timeline 2021 
                 em.stack Python, Pygame
                 ul.details 
                     li.
-                        Used Python and Pygame to build a Tetris game that incorporates original features with creative modifications
-            
+                        Co-built a Tetris game that incorporates original mechanics and features with creative modifications
             div.project
-                h2 URL Shortener/Customizer
+                h2 #[a(target='_blank'  style="text-decoration:none" href='https://github.com/alceray/URL-shortener') URL Shortener/Customizer]
                 p.timeline 2021
                 em.stack Python, Flask, HTML, SQLite
                 ul.details
                     li.
-                        Web application allows users to enter a URL and customize the URL key to their preference, or the program can generate a random shortened URL
+                        Created a web application that allows users to enter a URL and customize the URL key to their preference, or a random shortened URL can be generated
                     li.
-                        Used Python and Flask to store URL data in a SQLite database
+                        Used Python to pass and store URL data in a SQLite database
+            div.project
+                h2 Decision Tree
+                p.timeline 2020
+                em.stack Racket 
+                ul.details 
+                    li.
+                        Created and trained a machine learning classifier from a randomly generated dataset using an ID3 algorithm 
+                    li.
+                        Measured at a sensitivity of over 50% and a specificity of over 90% 
             div.project 
                 h2 Hamiltonian Cycle
                 p.timeline 2020
@@ -80,7 +104,7 @@ section.columns#details
                         Implemented a Huffman coding algorithm, inherited from a Binary Search Tree algorithm, to encode strings into their binary code and decode binary codes
 
         div#experience
-            h1 Experiences
+            h1 Experience
 
             div.job
                 h2 Computer Science Club Founding Member
@@ -89,11 +113,9 @@ section.columns#details
                 p.timeline 2017 &mdash; 2020
                 ul.details
                     li.
-                       Learned computer science concepts and explained material to struggling clubmates
+                       Learned computer science concepts and explained the material to students
                     li.
                         Consistently attended the weekly meets and actively asked questions about unfamiliar concepts
-                    //- li.
-                    //-     Promoted the club to my friends and classmates 
 
             div.job
                 h2 Piano Tutor
@@ -102,51 +124,7 @@ section.columns#details
                 p.timeline 2018 &mdash; 2019
                 ul.details
                     li.
-                        Planned piano lessons for several children in the neighbourhood to practice and hone their playing skills
-                    li.
-                        Provided emotional support to children who doubted their ability to play piano or recognize notes
-
-            //- div.job
-            //-     h2 Software Engineer
-            //-     h2.company WZMH Architects
-            //-     em.location Toronto, ON
-            //-     p.timeline 2020 &mdash; 2020
-            //-     ul.details
-            //-         li.
-            //-             Created software for the BlackBox5 IoT project
-            //-         li.
-            //-             Implemented backend in #[strong Node.js] to allow a #[strong React Native] 
-            //-             app to interface with devices connected to an Arduino microcontroller
-            //-             through a REST API and Websockets
-            //-         li.
-            //-             Stored data in a #[strong PostgreSQL] database and deployed project using #[strong Docker]
-
-            //- div.job
-            //-     h2 Web Developer
-            //-     h2.company VolunteeringPeel
-            //-     em.location Mississauga, ON
-            //-     p.timeline 2019 &mdash; 2020
-            //-     ul.details
-            //-         li Maintained website to help students find/apply for volunteer positions
-            //-         li Created tools to improve efficiency of management processes and handled technological support
-
-            //- div.job
-            //-     h2 JavaScript and Python Teacher
-            //-     h2.company Triway Education
-            //-     em.location Richmond Hill, ON
-            //-     p.timeline 2019 &mdash; 2020
-            //-     ul.details
-            //-         li Prepared lesson plans and assignments for students to practice and hone their skills
-
-            //- div.job
-            //-     h2 Teaching Assistant
-            //-     h2.company Spirit of Math Schools
-            //-     em.location Mississauga, ON
-            //-     p.timeline 2017 &mdash; 2019
-            //-     ul.details
-            //-         li Collaborated with classroom teacher to administer tests and curriculum materials
-
-        
+                        Planned and coordinated piano tutoring sessions for children to hone their playing skills and quickly advance them to the next level
             
 
     div.column#short-description
@@ -159,13 +137,17 @@ section.columns#details
                 p C
                 p C++
                 p Java 
+                p Javascript
                 p Racket
                 p R 
+                p Bash
 
             h2 Server/Web
             div.details
                 p HTML
+                p CSS
                 p Flask
+                p Node.js
 
             h2 Database
             div.details
@@ -174,19 +156,32 @@ section.columns#details
             h2 Tools
             div.details
                 p Git
-                p MS Office
+                p Microsoft Office
+                
 
             h2 Operating Systems
             div.details
-                p Windows
+                p Linux
             
             h2 Languages
             div.details
                 p English
                 p French 
-                p Mandarin 
-                p Cantonese
-        
+                p Cantonese 
+        div#education
+            h1 Education
+            
+            h2 Candidate for Bachelor of Computer Science
+            p.timeline 2020 &mdash; present
+            p.details University of Waterloo
+
+            h2 International Baccalaureate Diploma Program 
+            p.timeline 2016 &mdash; 2020
+            p.details Erindale Secondary School
+
+            h2 AP Computer Science A
+            p.timeline 2018
+            p.details LinkedKey
         div#awards
             h1 Awards
             
@@ -209,11 +204,13 @@ section.columns#details
             h2 Canadian Team Math Contest - First Place in Peel Region
             p.timeline 2019
             p.details Erindale Secondary School
-
+        
         div#interests
-            h1 Interests 
-            p Machine learning 
-            p Web development 
-            p Game development 
-            p Mobile app development 
-            p Data mining 
+            h1 Interests        
+            ul.details
+                li.p  Machine learning
+                li.p  Web development 
+                li.p  Game development 
+                //- li.p  Mobile app development 
+                //- li.p  Data mining 
+           
