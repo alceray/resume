@@ -13,6 +13,10 @@ section.columns.pt-3.mb-0#title
 
 section.columns.is-centered.has-text-centered.is-family-monospace.pb-1#contact
     div.column
+        a(target='_blank'  style="text-decoration:none" href='mailto:q54lin@uwaterloo.ca')
+            i.fa.fa-envelope
+            p q54lin@uwaterloo.ca    
+    div.column
         a(target='_blank'  style="text-decoration:none" href='https://github.com/alceray') 
             i.fa.fa-github
             p github.com/alceray
@@ -20,16 +24,12 @@ section.columns.is-centered.has-text-centered.is-family-monospace.pb-1#contact
         a(target='_blank'  style="text-decoration:none" href='https://linkedin.com/in/raylin02')
             i.fa.fa-linkedin
             p linkedin.com/in/raylin02
-    div.column
-        a(target='_blank'  style="text-decoration:none" href='mailto:q54lin@uwaterloo.ca')
-            i.fa.fa-envelope
-            p q54lin@uwaterloo.ca
     //- div.column
     //-     i.fa.fa-map-marker
     //-     p Mississauga, ON
     div.column
         i.fa.fa-phone
-        p 647-974-8613
+        p (647) 974-8613
 
 section.columns#details
     div.column#long-description
@@ -37,31 +37,31 @@ section.columns#details
             h1 Profile 
             ul.details 
                 li.
-                    Problem-solving developer with 1 co-op term of experience using web development and over 5 years of experience in programming 
+                    Problem-solving developer with 2 co-op terms of web development
                 li.
-                    Strong willingness to learn new programming languages and softwares, demonstrated in my projects and co-op
+                    Effective communications skills refined from daily stand-up meetings
                 li.
-                    Collaboration and teamwork skills used in daily work meetings
+                    Strong aptitude for learning new computing languages and relevant softwares
+                //- li.
+                //-     Collaboration and teamwork skills used in daily work meetings
                 //- li.
                 //-     5 years of experience using Microsoft Office, including Word, Excel, and PowerPoint
                 //- li.
                 //-     Conversational fluency in English and Cantonese 
-        //- div#education
-        //-         h1 Education
-                
-        //-         h2 Candidate for Bachelor of Computer Science, Honours Co-op
-        //-         p.timeline 2020 &mdash; present
-        //-         p.details University of Waterloo
-
-        //-         h2 International Baccalaureate Diploma Program 
-        //-         p.timeline 2016 &mdash; 2020
-        //-         p.details Erindale Secondary School
-
-        //-         h2 AP Computer Science A
-        //-         p.timeline 2018
-        //-         p.details LinkedKey
         div#experience
             h1 Experience
+            div.job
+                h2 Software Developer in Test @ NCR
+                br
+                em.location Waterloo, ON 
+                p.timeline May 2022 &mdash; Aug 2022
+                ul.details 
+                    li.
+                        Designed automation test scenarios and conducted E2E testing on a Teller UI app using Cucumber and TestCafe
+                    li.
+                        Collaborated with front-end developers to manually test their stories and ensure new features of the app adhere to the Figma design
+                    li.
+                        Refactored React components in the app to resolve over 20 SonarQube issues
             div.job 
                 h2 Full-Stack Developer @ SS&C Technologies 
                 br
@@ -69,30 +69,30 @@ section.columns#details
                 p.timeline Sep 2021 &mdash; Dec 2021
                 ul.details
                     li.
-                       Implemented Angular unit testing and removed the Bootstrap library from the front-end of a website, both of which were merged into the project's main branch.
-                    li. 
-                       Created a dashboard of cloud-based data on Superset through building SQL queries, that was presented as a demonstration to the CIO.
-                    li. 
-                       Developed a Spring Boot REST API with CRUD operations and exception handling that connects to a specific database depending on the environment. 
-            div.job
-                h2 Computer Science Club Founding Member
-                br
-                em.location Erindale Secondary School 
-                p.timeline 2017 &mdash; 2020
-                ul.details
+                       Implemented Angular unit testing and replaced Bootstrap with CSS in a web app to remove unnecessary styling
                     li.
-                        Consistently attended the weekly meets and aided other students in understanding the concepts
+                       Created a Superset dashboard of various charts by executing SQL queries on cloud-based data, which was ultimately demoed to the CIO
+                    //- li. 
+                    //-    Developed a Spring Boot REST API with CRUD operations and exception handling that connects to a specific database depending on the environment. 
+            //- div.job
+            //-     h2 Computer Science Club Founding Member
+            //-     br
+            //-     em.location Erindale Secondary School 
+            //-     p.timeline 2017 &mdash; 2020
+            //-     ul.details
+            //-         li.
+            //-             Consistently attended the weekly meets and aided other students in understanding the concepts
 
             div.job
                 h2 Piano Tutor
                 br
                 em.location Mississauga, ON
-                p.timeline 2018 &mdash; 2021
+                p.timeline 2018 &mdash; Present
                 ul.details
                     li.
-                        Coordinated piano tutoring sessions for children to hone their playing skills and quickly advance them to the next level
+                        Coordinated summer piano tutoring sessions for children in my neighbourhood
                     li.
-                        Taught my little sister to play piano, from no knowledge to currently Level 8, and continuously supported her in daily practices 
+                        Taught my little sister to play piano, from zero knowledge to currently Level 8
         div#projects
             h1 Projects
             div.project
@@ -141,8 +141,8 @@ section.columns#details
 
             h2 Programming
             div.details
-                p Python
                 p C/C++
+                p Python
                 p Java 
                 p Racket
                 p R 
@@ -150,16 +150,16 @@ section.columns#details
                 
             h2 Server/Web
             div.details
-                p HTML/CSS
+                p React
                 p REST
                 p Spring Boot 
+                p Node.js
                 p Angular
                 p Flask
-                p Node.js
 
             h2 Database
             div.details
-                p PostegreSQL
+                p PostgreSQL
                 p SQLite
 
             h2 Tools
@@ -209,9 +209,9 @@ section.columns#details
             p.timeline 2018
             p.details Erindale Secondary School
 
-            h2 Fryer School Champion
-            p.timeline 2017
-            p.details Erindale Secondary School
+            //- h2 Fryer School Champion
+            //- p.timeline 2017
+            //- p.details Erindale Secondary School
 
             //- h2 Canadian Team Math Contest - First Place in Peel Region
             //- p.timeline 2019
@@ -220,8 +220,8 @@ section.columns#details
         div#interests
             h1 Interests        
             ul.details
-                li.p  Machine learning
                 li.p  Web development 
+                li.p  Machine learning
                 li.p  Game development 
                 li.p  Mobile app development 
                 //- li.p  Data mining 

@@ -143,11 +143,14 @@ section#details {
             // }
         // }
 
+        div#profile {
+            margin-top: 10px;
+        }
         div#experience {
-            margin-top: 8px;
+            margin-top: 20px;
         }
         div#projects {
-            margin-top: 8px;
+            margin-top: 20px;
         }
         ul {
             margin-left: 0;
@@ -195,14 +198,17 @@ section#details {
                 }
             }
         }
+        div#skills {
+            margin-top: 10px;
+        }
         div#awards {
-            margin-top: 7px;
+            margin-top: 20px;
         }
         div#education {
-            margin-top: 7px;
+            margin-top: 20px;
         }
         div#interests {
-            margin-top: 7px;
+            margin-top: 20px;
         }
         ul {
             margin-left: 0;
