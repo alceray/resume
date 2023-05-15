@@ -13,6 +13,10 @@ $family-monospace: 'Cascadia Code';
     // margin-top: 5;
 }
 
+.column {
+    padding: 0 10px 5px 15px;
+}
+
 @page {
     size: letter portrait;
     margin: 0;
@@ -33,6 +37,7 @@ section#title, section#contact {
 
     h1.title {
         transform: scaleX(0.9);
+        margin: 20px 0;
     }
 }
 
@@ -42,7 +47,6 @@ a {
 }
 
 section#contact {
-    padding-right: 0px;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
     i {
         font-size: 20px;
@@ -59,7 +63,7 @@ section#details {
 
     h1 {
         font-size: 26px;
-        margin: 2px 0;
+        margin-top: 15px;
     }
 
     h2 {
@@ -94,7 +98,7 @@ section#details {
     }
 
     div#long-description {
-        flex: 2;
+        flex: 2.6;
 
         h2 {
             display: inline;
@@ -142,16 +146,7 @@ section#details {
             //     content: "\f041";
             // }
         // }
-
-        div#profile {
-            margin-top: 15px;
-        }
-        div#experience {
-            margin-top: 25px;
-        }
-        div#projects {
-            margin-top: 25px;
-        }
+        
         ul {
             margin-left: 0;
             border-left: 1px solid black;
@@ -184,6 +179,7 @@ section#details {
 
     div#short-description {
         border-left: 1px dashed rgba(0, 0, 0, 0.5);
+        padding-right: 0;
         div#skills {
             div.details {
                 p {
@@ -197,18 +193,6 @@ section#details {
                     margin-right: 5px;
                 }
             }
-        }
-        div#skills {
-            margin-top: 15px;
-        }
-        div#awards {
-            margin-top: 25px;
-        }
-        div#education {
-            margin-top: 25px;
-        }
-        div#interests {
-            margin-top: 25px;
         }
         ul {
             margin-left: 0;

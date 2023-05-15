@@ -37,11 +37,11 @@ section.columns#details
             h1 Profile 
             ul.details 
                 li.
-                    Problem-solving developer with 2 co-op terms of web development
+                    Problem-solver with 3 co-op terms of software development
                 li.
-                    Effective communications skills refined from daily stand-up meetings
+                    Proficient communications skills refined from daily scrum meetings
                 li.
-                    Strong aptitude for learning new computing languages and relevant softwares
+                    Strong aptitude for learning new software tools and industry standards
                 //- li.
                 //-     Collaboration and teamwork skills used in daily work meetings
                 //- li.
@@ -50,6 +50,18 @@ section.columns#details
                 //-     Conversational fluency in English and Cantonese 
         div#experience
             h1 Experience
+            div.job 
+                h2 Full-Stack Developer @ SS&C Technologies (rehire)
+                br
+                em.location Toronto, ON 
+                p.timeline Jan 2023 &mdash; Apr 2023
+                ul.details
+                    li.
+                        Restored the web scraper from an old Knowledge Base project and documented the errors encountered in the data migration API and Python scripts
+                    li.
+                        Implemented a Nifi flow to silence alerting on holidays that was deployed to production
+                    li.
+                        Developed a data scraper using Node.js to migrate the help contents of a TA2000 browser application to a new XWiki application, which was demoed to and complimented by stakeholders
             div.job
                 h2 Software Developer in Test @ NCR
                 br
@@ -57,11 +69,11 @@ section.columns#details
                 p.timeline May 2022 &mdash; Aug 2022
                 ul.details 
                     li.
-                        Designed automation test scenarios and conducted E2E testing on a Teller UI app using Cucumber and TestCafe
+                        Designed automation test scenarios and conducted E2E testing on a Teller UI application using Cucumber and TestCafe
                     li.
-                        Collaborated with front-end developers to manually test their stories and ensure new features of the app adhere to the Figma design
+                        Collaborated with front-end developers to manually test their new features
                     li.
-                        Refactored React components in the app to resolve over 20 SonarQube issues
+                        Refactored React components in the application to resolve over 20 SonarQube issues
             div.job 
                 h2 Full-Stack Developer @ SS&C Technologies 
                 br
@@ -75,65 +87,62 @@ section.columns#details
                     //- li. 
                     //-    Developed a Spring Boot REST API with CRUD operations and exception handling that connects to a specific database depending on the environment. 
             //- div.job
-            //-     h2 Computer Science Club Founding Member
+            //-     h2 Piano Tutor
             //-     br
-            //-     em.location Erindale Secondary School 
-            //-     p.timeline 2017 &mdash; 2020
+            //-     em.location Mississauga, ON
+            //-     p.timeline 2018 &mdash; Present
             //-     ul.details
             //-         li.
-            //-             Consistently attended the weekly meets and aided other students in understanding the concepts
-
-            div.job
-                h2 Piano Tutor
-                br
-                em.location Mississauga, ON
-                p.timeline 2018 &mdash; Present
-                ul.details
-                    li.
-                        Coordinated summer piano tutoring sessions for children in my neighbourhood
-                    li.
-                        Taught my little sister to play piano, from zero knowledge to currently Level 8
+            //-             Coordinated summer piano tutoring sessions for children in my neighbourhood
+            //-         li.
+            //-             Taught my little sister to play piano, from zero knowledge to currently Level 8
         div#projects
             h1 Projects
             div.project
-                h2 #[a(target='_blank' style="text-decoration:none" href='https://github.com/alceray/Tetris-game') Tetris Game]
-                p.timeline 2021 
-                em.stack Python, Pygame
+                h2 #[a(target='_blank' style="text-decoration:none" href='https://github.com/alceray/Typing-Test-App') Typing Test]
+                p.timeline Apr 2023 &mdash; present
+                em.stack Django, React, PostgreSQL
                 ul.details 
                     li.
-                        Co-built a Tetris game that incorporates the original mechanics with additional creative features
-            div.project
-                h2 #[a(target='_blank'  style="text-decoration:none" href='https://github.com/alceray/URL-shortener') URL Shortener/Customizer]
-                p.timeline 2021
-                em.stack Python, Flask, HTML, SQLite
+                        Develop a typing test application that challenges the user's typing accuracy and consistency in various modes
+                    li.
+                        Download and store books from the Project Gutenberg API in the database and serves random texts in a Django view
+            div.project 
+                h2 #[a(target='_blank' style="text-decoration:none" href='https://git.uwaterloo.ca/jpparapp/cs_346_project') To-Do List]
+                p.timeline Sep 2022 &mdash; Dec 2022
+                em.stack Kotlin, JavaFX, Spring Boot, MongoDB
                 ul.details
                     li.
-                        Created a web application that allows users to enter a URL and either customize the URL key to their preference or randomly generate a shortened one
+                        Collaborated with several classmates to build a to-do list desktop application according to our assigned tasks
+                    li.
+                        Developed key functionalities such as deleting tasks, selecting all tasks, undo/redo, and keyboard shortcuts
+                    li.
+                        Packaged the application as a ZIP file and executable installers using Gradle
+            //- div.project
+            //-     h2 #[a(target='_blank' style="text-decoration:none" href='https://github.com/alceray/Tetris-game') Tetris Game]
+            //-     p.timeline 2021 
+            //-     em.stack Python, Pygame
+            //-     ul.details 
+            //-         li.
+            //-             Co-built a Tetris game that incorporates the original mechanics with additional creative features
+            //- div.project
+            //-     h2 #[a(target='_blank'  style="text-decoration:none" href='https://github.com/alceray/URL-shortener') URL Shortener/Customizer]
+            //-     p.timeline 2021
+            //-     em.stack Python, Flask, SQLite
+            //-     ul.details
+            //-         li.
+            //-             Created a web application that allows users to enter a URL and either customize the URL key to their preference or randomly generate a shortened one
                     //- li.
                     //-     Used Python to pass and store URL data in a SQLite database
-            div.project
-                h2 Decision Tree
-                p.timeline 2020
-                em.stack Racket 
-                ul.details 
-                    li.
-                        Created and trained a machine learning classifier from a randomly generated dataset using an ID3 algorithm 
-                    li.
-                        Measured at a sensitivity of over 50% and a specificity of over 90% 
-            //- div.project 
-            //-     h2 Hamiltonian Cycle
-            //-     p.timeline 2020
-            //-     em.stack C++
-            //-     ul.details 
-            //-         li.
-            //-             Employed a backtracking algorithm to solve the Hamilton cycle problem 
             //- div.project
-            //-     h2 Huffman Tree
-            //-     p.timeline 2018
-            //-     em.stack Java
+            //-     h2 Decision Tree
+            //-     p.timeline 2020
+            //-     em.stack Racket 
             //-     ul.details 
             //-         li.
-            //-             Implemented a Huffman coding algorithm, inherited from a Binary Search Tree algorithm, to encode strings into their binary code and decode binary codes
+            //-             Created and trained a machine learning classifier from a randomly generated dataset using an ID3 algorithm 
+            //-         li.
+            //-             Measured at a sensitivity of over 50% and a specificity of over 90% 
 
     div.column#short-description
         div#skills
@@ -141,8 +150,9 @@ section.columns#details
 
             h2 Programming
             div.details
-                p C/C++
                 p Javascript
+                p C
+                p C++
                 p Python
                 p Kotlin
                 p Java 
@@ -151,30 +161,35 @@ section.columns#details
                 
             h2 Server/Web
             div.details
-                p React
                 p REST
-                p Spring Boot 
+                p React
                 p Node.js
+                p Spring Boot
+                p Django
                 p Angular
                 p Flask
 
             h2 Database
             div.details
                 p PostgreSQL
+                p MongoDB
                 p SQLite
 
             h2 Tools
             div.details
                 p Git
-                p Microsoft Office                
                 p Jira
+                p Docker
                 p Postman
                 p Superset
+                p Figma
+                p Nifi
+                p Swagger
 
             h2 Operating Systems
             div.details
                 p Windows
-                p Linux
+                p Linux (Ubuntu, CentOS)
             
             //- h2 Languages
             //- div.details
@@ -192,9 +207,9 @@ section.columns#details
             p.timeline 2016 &mdash; 2020
             p.details Erindale Secondary School
 
-            h2 AP Computer Science A
-            p.timeline 2018
-            p.details LinkedKey
+            //- h2 AP Computer Science A
+            //- p.timeline 2018
+            //- p.details LinkedKey
         div#awards
             h1 Awards
             
@@ -206,9 +221,9 @@ section.columns#details
             p.timeline 2019
             p.details Erindale Secondary School
             
-            h2 Galois School Champion
-            p.timeline 2018
-            p.details Erindale Secondary School
+            //- h2 Galois School Champion
+            //- p.timeline 2018
+            //- p.details Erindale Secondary School
 
             //- h2 Fryer School Champion
             //- p.timeline 2017
