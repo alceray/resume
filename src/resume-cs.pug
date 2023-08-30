@@ -24,9 +24,9 @@ section.columns.is-centered.has-text-centered.is-family-monospace.pb-1#contact
         a(target='_blank'  style="text-decoration:none" href='https://linkedin.com/in/raylin02')
             i.fa.fa-linkedin
             p linkedin.com/in/raylin02
-    //- div.column
-    //-     i.fa.fa-map-marker
-    //-     p Mississauga, ON
+    div.column
+        i.fa.fa-map-marker
+        p Mississauga, ON
     div.column
         i.fa.fa-phone
         p (647) 974-8613
@@ -34,14 +34,18 @@ section.columns.is-centered.has-text-centered.is-family-monospace.pb-1#contact
 section.columns#details
     div.column#long-description
         div#profile
-            h1 Profile 
+            h1 Summary
             ul.details 
                 li.
-                    Third-year Waterloo CS student with three co-op terms of software development
+                    Two years experience developing and testing software applications
+                //- li.
+                //-     Proficient communication skills refined from daily scrum meetings
                 li.
-                    Proficient communication skills refined from daily scrum meetings
+                    Collaboration and problem-solving skills refined through three co-op terms as software developer
                 li.
-                    Strong aptitude for learning new software tools and industry standards
+                    Solid academic career focusing on user interfaces and machine learning 
+                li.
+                    Strong aptitude for learning new programming languages and tools
                 //- li.
                 //-     Collaboration and teamwork skills used in daily work meetings
                 //- li.
@@ -57,11 +61,11 @@ section.columns#details
                 p.timeline Jan 2023 &mdash; Apr 2023
                 ul.details
                     li.
-                        Restored the web scraper from an old knowledge management system and documented the errors encountered in the data migration API and Python scripts
+                        Restored a web scraper for the InQuira knowledge base by restoring the PostgreSQL database, updating Python scripts, and debugging data migration API issues in the KB App
                     li.
-                        Implemented a Nifi flow for silencing alerts on holidays and deployed it to production
+                        Created and deployed a Nifi flow for silencing alerts and routing them to emails on holidays, using the APIM Holidays API and Groovy scripts
                     li.
-                        Designed and built a data scraper POC for a new XWiki application using Node.js, which saved at least a week of front-end work
+                        Independently designed and implemented a POC for a Node.js scraper that migrates TA2000 DST data to a XWiki application through the REST API, saving a week of front-end work
             div.job
                 h2 Software Developer in Test @ NCR
                 br
@@ -69,11 +73,11 @@ section.columns#details
                 p.timeline May 2022 &mdash; Aug 2022
                 ul.details 
                     li.
-                        Designed automation test scenarios and conducted E2E testing on a Teller UI application using Cucumber and TestCafe
+                        Designed automation test scenarios in Cucumber feature files and performed E2E testing through TestCafe on a Teller UI application, focusing on code readability and reusability
                     li.
-                        Collaborated with front-end developers to manually test their new UI features
+                        Collaborated with front-end developers to conduct manual testing on their feature implementations, reporting any observed inconsistencies and setting up stakeholder meetings to discuss certain issues
                     li.
-                        Refactored React components to resolve over 20 SonarQube issues, reducing the number of bugs by 15%
+                        Resolved over 20% of the SonarQube issues by refactoring React components
             div.job 
                 h2 Full-Stack Developer @ SS&C Technologies 
                 br
@@ -81,9 +85,11 @@ section.columns#details
                 p.timeline Sep 2021 &mdash; Dec 2021
                 ul.details
                     li.
-                       Implemented unit testing and replaced Bootstrap with CSS in an Angular application
+                        Conducted Angular unit testing and the replacement of Bootstrap with CSS elements for the IVA Admin page to enforce the functionality and efficiency of the codebase
                     li.
-                       Leveraged SQL queries to create a Superset dashboard with various charts and maps, improving data comprehension for the stakeholders
+                        Leveraged SQL queries to visualize funds data in a Superset dashboard with various charts and maps, and demonstrated the application's reporting utility to the stakeholders
+                    li.
+                        Coordinated daily meetings with another co-op student to exchange ideas, resolve conflicts, and collaborately complete our tasks
                     //- li. 
                     //-    Developed a Spring Boot REST API with CRUD operations and exception handling that connects to a specific database depending on the environment. 
             //- div.job
@@ -99,25 +105,33 @@ section.columns#details
         div#projects
             h1 Projects
             div.project
-                h2 #[a(target='_blank' style="text-decoration:none" href='https://github.com/alceray/Typing-Test-App') Typing Test]
+                div.project 
+                h2 Large Language Model
+                p.timeline Jul 2023
+                em.stack Python, PyTorch
+                ul.details
+                    li.
+                        Extended and fine-tuned GPT2 to perform question-answering tasks at 20% exact match
+            div.project
+                h2 #[a(target='_blank' style="text-decoration:none" href='https://github.com/alceray/Typing-Test-App') Typing Test Application]
                 p.timeline Apr 2023 &mdash; present
                 em.stack Django, React, PostgreSQL
                 ul.details 
                     li.
-                        Develop a React application that challenges the user's typing speed, accuracy, and consistency in different modes
+                        Develop a React application with an integrated Django back-end that challenges the user's typing abilities in creative ways
                     li.
-                        Download and store books from the Project Gutenberg API in the database and serve sentences in a Django view
+                        Extract and store text from the Project Gutenberg API into the PostgreSQL database and serve it in a Django view
             div.project 
-                h2 #[a(target='_blank' style="text-decoration:none" href='https://git.uwaterloo.ca/jpparapp/cs_346_project') To-Do List]
+                h2 #[a(target='_blank' style="text-decoration:none" href='https://git.uwaterloo.ca/jpparapp/cs_346_project') To-Do List Application]
                 p.timeline Sep 2022 &mdash; Dec 2022
                 em.stack Kotlin, JavaFX, Spring Boot, MongoDB
                 ul.details
                     li.
-                        Collaborated with several classmates to build a to-do list desktop application according to our assigned tasks
+                        Collaborated with several group members to develop a to-do list desktop application using Kotlin and JavaFX
+                    //- li.
+                    //-     Utilized JavaFX to develop key functionalities such as deleting tasks, selecting all tasks, undo/redo, and keyboard shortcuts
                     li.
-                        Developed key functionalities such as deleting tasks, selecting all tasks, undo/redo, and keyboard shortcuts
-                    li.
-                        Packaged the application as a ZIP file and executable installers using Gradle
+                        Packaged the application and created executable installers using Gradle
             //- div.project
             //-     h2 #[a(target='_blank' style="text-decoration:none" href='https://github.com/alceray/Tetris-game') Tetris Game]
             //-     p.timeline 2021 
@@ -161,6 +175,7 @@ section.columns#details
                 
             h2 Server/Web
             div.details
+                p HTML/CSS
                 p REST
                 p React
                 p Node.js
@@ -207,9 +222,9 @@ section.columns#details
             p.timeline 2016 &mdash; 2020
             p.details Erindale Secondary School
 
-            //- h2 AP Computer Science A
-            //- p.timeline 2018
-            //- p.details LinkedKey
+            h2 AP Computer Science A
+            p.timeline 2018
+            p.details LinkedKey
         div#awards
             h1 Awards
             
@@ -221,13 +236,13 @@ section.columns#details
             p.timeline 2019
             p.details Erindale Secondary School
             
-            //- h2 Galois School Champion
-            //- p.timeline 2018
-            //- p.details Erindale Secondary School
+            h2 Galois School Champion
+            p.timeline 2018
+            p.details Erindale Secondary School
 
-            //- h2 Fryer School Champion
-            //- p.timeline 2017
-            //- p.details Erindale Secondary School
+            h2 Fryer School Champion
+            p.timeline 2017
+            p.details Erindale Secondary School
 
             //- h2 Canadian Team Math Contest - First Place in Peel Region
             //- p.timeline 2019
@@ -236,9 +251,11 @@ section.columns#details
         div#interests
             h1 Interests        
             ul.details
+                li.p  Software development
                 li.p  Web development 
                 li.p  Machine learning
-                li.p  Game development 
-                //- li.p  Mobile app development 
+                li.p  Deep learning
+                li.p  Human-computer interaction 
+                li.p  Data analysis
                 //- li.p  Data mining 
            

@@ -36,9 +36,9 @@ section#title, section#contact {
     background: #f8f8f8;
 
     h1.title {
-        transform: scaleX(0.9);
-        margin-top: 30px;
-        margin-bottom: 20px;
+        transform: scale(0.7);
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -50,12 +50,12 @@ a {
 section#contact {
     border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
     i {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    a {
+    p {
         display: block;
-        font-size: 16px;
+        font-size: 13px;
     }
 }
 
@@ -63,19 +63,19 @@ section#details {
     height: calc(#{$page-height} - 147.2px);
 
     h1 {
-        font-size: 26px;
-        margin-top: 15px;
+        font-size: 20px;
+        margin-top: 10px;
     }
 
     h2 {
-        font-size: 13px;
+        font-size: 12px;
         font-weight: bold;
         line-height: 20px;
         color: black;
     }
 
     p {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 15px;
     }
     
@@ -125,7 +125,7 @@ section#details {
         }
 
         em {
-            font-size: 13px;
+            font-size: 12px;
 
             &.stack {
                 display: block;
@@ -155,7 +155,7 @@ section#details {
 
             li {
                 list-style: none;
-                font-size: 13px;
+                font-size: 12px;
                 margin-left: 12px;
 
                 // display: inline;
@@ -202,7 +202,7 @@ section#details {
 
             li {
                 list-style: none;
-                font-size: 13px;
+                font-size: 12px;
                 margin-left: 12px;
                 margin-bottom: 2px;
                 // display: inline;
